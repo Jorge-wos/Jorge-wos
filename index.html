@@ -3,51 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dedicatoria para mi Pareja</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
-            text-align: center;
-            padding: 50px;
-            color: #333;
-        }
-        h1 {
-            font-size: 3em;
-            color: #d34f73;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px;
-        }
-        .video-container {
-            margin-top: 30px;
-        }
-        video {
-            width: 80%;
-            max-width: 600px;
-            border: 5px solid #d34f73;
-            border-radius: 10px;
-        }
-    </style>
+    <title>Para Mi preciosota ❤️</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Para Mi Prciosotaaa ❤️</h1>
+        <p class="message">Desde que llegaste a mi vida, cada día es San Valentín. Eres mi razón para sonreír, soñar y amar sin medida. Te amo con todo mi corazón 💕
+            Desde el día en que te conocí, supe que mi vida cambiaría para siempre. Eres la razón por la que sonrío sin motivo, el latido que da ritmo a mi corazón y el 
+            sueño del que nunca quiero despertar. Contigo, cada día es una nueva aventura, un nuevo capítulo de una historia que quiero escribir a tu lado por siempre. No hay palabras suficientes para expresar cuánto te amo, pero si pudiera 
+            elegir un lugar para estar por el resto de mi vida, sin duda sería a tu lado💕
+        </p>
 
-    <h1>Pa Ti, Mi Preciosotaaa 💕</h1>
-    <p>
-        Hoy quiero recordarte lo especial que eres para mí. Cada momento que compartimos está lleno de alegría y amor. 
-        Eres mi persona favorita, mi compañera de aventuras y mi mayor bendición.
-    </p>
+        <div class="video-container">
+            <video controls>
+                <source src="video 1.mp4" type="video/mp4">
+            </video>
+        </div>
 
-    <p>
-        Seamos como <strong>Mariana y MrStivenTc</strong>, inseparables y auténticos, siempre apoyándonos mutuamente.
-    </p>
-
-    <div class="video-container">
-        <video controls>
-            <source src="pati.mp4" type="video/mp4">
-        </video>
+        <h2>ERES MI BLANQUITA HERMOSA,❤️ Y LA AMO MUCHOOOOOOOOOO💕</h2>
+        <div class="gallery">
+            <div class="photo-box" onclick="openModal('foto 1.jpeg')">
+                <img src="foto 1.jpeg" alt="Foto 1">
+            </div>
+            <div class="photo-box" onclick="openModal('foto 2.jpeg')">
+                <img src="foto 2.jpeg" alt="Foto 2">
+            </div>
+            <div class="photo-box" onclick="openModal('foto 3.jpeg')">
+                <img src="foto 3.jpeg" alt="Foto 3">
+            </div>
+            <div class="photo-box" onclick="openModal('foto 4.jpeg')">
+                <img src="foto 4.jpeg" alt="Foto 4">
+            </div>
+        </div>
     </div>
 
+    <!-- Modal para mostrar imágenes en grande -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
